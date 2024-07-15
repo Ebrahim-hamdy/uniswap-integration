@@ -1,0 +1,157 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x1081FdF536929e327cfF1904f02fC70D0288D91a",
+      "txHash": "0x175c5d65a0f8b446c34f52fb4e968ea697f0758d676c7908d55b91a402cb354b",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "44d6eae768fe894d05af473019c68235acb84021c080ac576f48114b19afbdde": {
+      "address": "0xD575eb223448Fd56B7eD1b98099b57038Fd622e6",
+      "txHash": "0xa0660c46cd4b27e17cf00e0c7d2136d62504a4900e0c29dc84bf26c83c00aaec",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "uniswapRouter",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_contract(IUniswapRouter)1580",
+            "contract": "TradeRouter",
+            "src": "contracts\\TradeRouter.sol:53"
+          },
+          {
+            "label": "USDC",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "TradeRouter",
+            "src": "contracts\\TradeRouter.sol:55"
+          },
+          {
+            "label": "WETH9",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "TradeRouter",
+            "src": "contracts\\TradeRouter.sol:56"
+          },
+          {
+            "label": "feeTier",
+            "offset": 20,
+            "slot": "2",
+            "type": "t_uint24",
+            "contract": "TradeRouter",
+            "src": "contracts\\TradeRouter.sol:57"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)65_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)14_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)193_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_contract(IUniswapRouter)1580": {
+            "label": "contract IUniswapRouter",
+            "numberOfBytes": "20"
+          },
+          "t_uint24": {
+            "label": "uint24",
+            "numberOfBytes": "3"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\utils\\PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
